@@ -4,14 +4,14 @@ registerMicroApps([
     name: 'reactApp',
     entry: '//localhost:3000',
     container: '#container',
-    activeRule: '/app-react',
+    activeRule: '/react17',
   },
-  {
-    name: 'angularApp',
-    entry: '//localhost:4200',
-    container: '#container',
-    activeRule: '/app-angular',
-  },
+  // {
+  //   name: 'angularApp',
+  //   entry: '//localhost:4200',
+  //   container: '#container',
+  //   activeRule: '/app-angular',
+  // },
 ]);
 // 启动 qiankun
 start();
