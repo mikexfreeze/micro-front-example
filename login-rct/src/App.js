@@ -10,28 +10,28 @@ import {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={window.__POWERED_BY_QIANKUN__ ? '/react17' : '/'}>
       <div>
         <ul>
           <li>
-            <Link to="/react-test">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/react-test/about">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/react-test/topics">Topics</Link>
+            <Link to="/topics">Topics</Link>
           </li>
         </ul>
 
         <Switch>
-          <Route path="/react-test/about">
+          <Route path="/about">
             <About />
           </Route>
-          <Route path="/react-test/topics">
+          <Route path="/topics">
             <Topics />
           </Route>
-          <Route path="/react-test/">
+          <Route path="/">
             <Home />
           </Route>
         </Switch>
