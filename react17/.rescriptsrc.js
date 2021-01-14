@@ -6,6 +6,7 @@ module.exports = {
     config.output.libraryTarget = 'umd';
     config.output.jsonpFunction = `webpackJsonp_${name}`;
     config.output.globalObject = 'window';
+    config.output.publicPath = process.env.NODE_ENV === 'production' ? '/subapp/react17/' : '/';
     return config;
   },
   devServer: _ => {

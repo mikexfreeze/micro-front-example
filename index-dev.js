@@ -2,7 +2,7 @@ import { registerMicroApps, start } from 'qiankun';
 registerMicroApps([
   {
     name: 'reactApp',
-    entry: '/subapp/react17',
+    entry: '//localhost:3000',
     container: '#container',
     activeRule: '/react17',
   },

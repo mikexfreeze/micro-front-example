@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { name } = require('./package');
 
 module.exports = {
-  entry: './index.js',
+  entry: process.env.NODE_ENV === 'production' ? './index.js' : './index-dev.js',
   devtool: 'source-map',
   devServer: {
     open: true,
