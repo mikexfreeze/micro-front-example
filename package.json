@@ -10,6 +10,7 @@
     "build": "npm-run-all --serial build:*",
     "build:main": "cross-env NODE_ENV=production webpack",
     "build:react17": "cd react17 && npm run build",
+    "build:angular9": "cd angular9 && npm run build",
     "build:copy": "node copyfiles",
     "prew": "cd dist && serve -p 8000",
     "test": "echo \"Error: no test specified\" && exit 1"
