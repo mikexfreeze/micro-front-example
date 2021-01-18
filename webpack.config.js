@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { name } = require('./package');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: process.env.NODE_ENV === 'production' ? './index.js' : './index-dev.js',
@@ -43,6 +43,7 @@ module.exports = {
   //   ],
   // },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './index.html',

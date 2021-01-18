@@ -30,6 +30,7 @@
     "qiankun": "^2.3.5"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^7.0.0",
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
