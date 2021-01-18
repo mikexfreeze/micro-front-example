@@ -14,4 +14,6 @@ registerMicroApps([
   },
 ]);
 // 启动 qiankun
-start();
+start({
+  prefetch: true,
+});
